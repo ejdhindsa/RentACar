@@ -19,7 +19,12 @@ public enum Option
         this.pricePerDay = pricePerDay;
     } // end of premiumPackage()
     
-    // ** add getter comments here **
+    /***************************
+     * Getter Information:
+     * getDisplay() - returns the display of the class
+     * getPricePerDay() - returns the pricePerDay of the class
+     ***************************/
+    
     public String getDisplay()
     {
         return this.display;
@@ -29,5 +34,21 @@ public enum Option
     {
         return this.pricePerDay;
     } // end of getPricePerDay()
+
+    /***************************
+     * Setter Information:
+     * setDisplay() - @param String - sets the display of the class
+     * setPricePerDay() - @param int - sets the pricePerDay of the class
+    ***************************/
+
+    public void setDisplay(String display)
+    {
+        this.display = display;
+    } // end of setDisplay()
+
+    public void setPricePerDay(int pricePerDay)
+    {
+        this.pricePerDay = pricePerDay;
+    } // end of setPricePerDay()
     
 } // end of enum
