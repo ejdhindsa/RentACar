@@ -16,6 +16,25 @@ public class Premium extends Vehicle
         
     } // end of full-arg constructor
     
+    /***************************
+     * Getter Information:
+     * getPack - returns the pack display() to the user
+     ***************************/
+
+    public String getPack()
+    {
+        return this.pack.getDisplay();
+    } // end of getPack()
+
+    /***************************
+     * Setter Information:
+     * setPack - @param PremiumPackage - sets the pack display() to the user
+    ***************************/
+
+    public void setPack(PremiumPackage pack)
+    {
+        this.pack = pack;
+    } // end of setPack()
     
     // UTILITY METHODS
     
@@ -37,5 +56,15 @@ public class Premium extends Vehicle
         return totalPrice;
         
     } // end of calculatePrice()
+
+    /***************************
+     * This method returns the toString of the method, it also overrides
+     * from the super class
+    ***************************/
+    @Override
+    public String toString()
+    {
+        return super() + ", " + pack.geDisplay();
+    } // end of toString   
     
 } // end of Premium()
