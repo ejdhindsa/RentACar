@@ -59,6 +59,7 @@ public class Inventory
      {
          vehicleList.add(vehicle);      // adds vehicle to the Inventory
          vehicle.setInventory(this);    // sets inventory of the vehicle
+         Collections.sort(vehicleList);     // sorts the collection 
          
      } // end of addVehicle()
      

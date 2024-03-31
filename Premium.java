@@ -21,9 +21,9 @@ public class Premium extends Vehicle
      * getPack - returns the pack display() to the user
      ***************************/
 
-    public String getPack()
+    public PremiumPackage getPack()
     {
-        return this.pack.getDisplay();
+        return this.pack;
     } // end of getPack()
 
     /***************************
@@ -50,7 +50,7 @@ public class Premium extends Vehicle
         
         // adding the required values
         totalPrice += this.basePrice;
-        totalPrice += this.pack.getPricePerDay();
+        totalPrice += this.getPack().getPricePerDay();
         
         // returning the values
         return totalPrice;
@@ -64,7 +64,7 @@ public class Premium extends Vehicle
     @Override
     public String toString()
     {
-        return super() + ", " + pack.geDisplay();
+        return super.toString() + ", " + pack.getDisplay();
     } // end of toString   
     
 } // end of Premium()

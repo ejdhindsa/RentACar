@@ -18,7 +18,12 @@ public enum PremiumPackage
         this.pricePerDay = pricePerDay;
     } // end of premiumPackage()
     
-    // ** add getter comments here **
+    /****************************************
+     * Following methods are the methods that return required data of the class
+     * 
+     * getDisplay() - returns the display of the enum
+     * getPricePerDay() - returns the pricePerDay of the enum
+     ***************************************/
     public String getDisplay()
     {
         return this.display;
@@ -28,5 +33,5 @@ public enum PremiumPackage
     {
         return this.pricePerDay;
     } // end of getPricePerDay()
-    
+
 } // end of enum

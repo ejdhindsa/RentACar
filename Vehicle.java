@@ -1,4 +1,4 @@
-public abstract class Vehicle
+public abstract class Vehicle implements Comparable<Vehicle>
 {
     // FIELDS
     protected String make;           // make of the vehicle
@@ -88,15 +88,29 @@ public abstract class Vehicle
     
     public void setBasePrice(int basePrice)
     {
-        this.basePrice = this.basePrice;
+        this.basePrice = basePrice;
     } // end of setBasePrice()
     
+    public void setID(String id){
+        this.id = id;
+    }
     public void setInventory(Inventory inventory)
     {
         this.inventory = inventory;
     } // end of setInventory()
     
     // UTILITY METHODS
+    
+    /***************************************
+     * compareTo() method that returns an int comparing two vehicles
+     * @param vehicle that is a vehicle object
+     * @return returns the int based on the compareTo method
+    ***************************************/
+    public int compareTo(Vehicle vehicle)
+    {
+        return this.id.compareTo(vehicle.getID());
+        
+    } // end of compareTo()
     
     /***************************************
      * calculatePrice() is an abstract method that will be implemented in the

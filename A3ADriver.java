@@ -1,11 +1,14 @@
+// import statements
 import java.beans.XMLEncoder;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+
 /**
  * ACS-1904 Assignment 3
  * driver code for part A
  */
+
 public class A3ADriver
 {
     public static void main(String[] args)throws IOException
@@ -100,12 +103,19 @@ public class A3ADriver
         System.out.println("-------------------------------------------");
         System.out.println("XML files are bein written.");
         
-        // start your code here
+        // creating an XML Encoder in order to write the XML files
         
+        // XML encoder to write the vehicles to an XML file
+        XMLEncoder vehicleEncoder = new XMLEncoder(new FileOutputStream("As3-vehicles.xml"));
+        vehicleEncoder.writeObject(vehicles);      // writing the vehicles
+        vehicleEncoder.close();                    // closing the encoder
+        System.out.println("Vehicles ArrayList has been writtem to an XML file.");
         
-        // end of your code
-        
-        System.out.println("inventory written to file");
+        // XML encoder to write the inventory to an XML file
+        XMLEncoder inventoryEncoder = new XMLEncoder(new FileOutputStream("As3-inventory.xml"));
+        inventoryEncoder.writeObject(inventory);    // writing the inventory
+        inventoryEncoder.close();                   // closing the encoder
+        System.out.println("Inventory object has been writtem to an XML file.");
         
         System.out.println("end of program.");
         
