@@ -1,4 +1,4 @@
-public abstract class Vehicle implements Comparable<Vehicle>
+public abstract class Vehicle implements Comparable<Vehicle>, Special
 {
     // FIELDS
     protected String make;           // make of the vehicle
@@ -161,6 +161,20 @@ public abstract class Vehicle implements Comparable<Vehicle>
           return sb.toString();             // returns the string builder as a string 
           
       } // end of displayVehicleInformation()
+      
+      // UTILITY METHODS FOR THE SPECIAL CLASS
+      
+      /**********************************
+       * The following method gets the information of the vehicle as seen in the
+       * example output
+       * @return String - Information of the vehicle (make and model)
+       ********************************/
+       public String getVehicleInfo()
+       {
+           return this.getMake() + " " + this.getModel();
+           
+       } // end of getVehicleInfo()
+       
       
       /*********************************
        * toString method of the class

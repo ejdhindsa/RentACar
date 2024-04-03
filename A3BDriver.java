@@ -1,6 +1,8 @@
 // import statements
 import java.beans.XMLDecoder;
+import java.beans.XMLEncoder;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,8 +21,6 @@ public class A3BDriver
         // creating an arraylist that will read value from the XML file
         // we cast the object into an arraylist as it is a java object
         ArrayList<Vehicle> vehicles = (ArrayList) decoder.readObject();
-        
-        System.out.println(vehicles.get(0).calculatePrice());
         
         decoder.close();        // closing the decoder
         
@@ -46,11 +46,54 @@ public class A3BDriver
         
         // printing the vlaues as required by the output
         System.out.println("Premium Vehicles of Price:");
+        System.out.println();       // printing an empty line
+        
         for (Vehicle p : premium)
         {
-            System.out.println(p.getID() + " $" + p.calculatePrice() );
+            // creating a stringbuilder that will be used to format the printing of vehicles
+            StringBuilder sb = new StringBuilder();
+        
+            // appending all the required information to the string builder created above
+            sb.append(p.getMake() + " " + p.getModel() + ": ");
+            sb.append(p.getID() + " $" + (int) p.calculatePrice());
+            
+            System.out.println(sb.toString());
+            
         } // end of enhanced for - printing premium vehicles
         
+        System.out.println();       // printing an empty line
+        
+        System.out.println("Standard Vehicles of Price:");
+        System.out.println();       // printing an empty line
+        
+        for (Vehicle p : standard)
+        {
+            // creating a stringbuilder that will be used to format the printing of vehicles
+            StringBuilder sb = new StringBuilder();
+            
+            // appending all the required information to the string builder created above
+            sb.append(p.getMake() + " " + p.getModel() + ": ");
+            sb.append(p.getID() + " $" + (int) p.calculatePrice());
+            
+            System.out.println(sb.toString());
+            
+        } // end of enhanced for - printing premium vehicles
+        
+        // writing all the information in an XML file
+        XMLEncoder encoder = new XMLEncoder(new FileOutputStream("As3B-Vehicles.xml"));
+        // writing standard and premium to the xml file
+        encoder.writeObject(premium);
+        encoder.writeObject(standard);
+        
+        encoder.close();        // closing the encoder
+        
+        // printing tht all the information has been writtent to the file
+        System.out.println();       // printing an empty line
+        System.out.println("*** Registration info has been written to As3B-vehicles.xml ***");
+        
+        // end of program
+        System.out.println();       // printing an empty line
+        System.out.println("end of program");
         
     } // end of main
     

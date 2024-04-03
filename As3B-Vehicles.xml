@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="17.0.4.1" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="Premium" id="Premium0">
+    <void property="ID">
+     <string>FoMu-1046</string>
+    </void>
+    <void property="basePrice">
+     <int>25</int>
+    </void>
+    <void property="inventory">
+     <object class="Inventory" id="Inventory0">
+      <void property="inventoryName">
+       <string>St Mary&apos;s Hot Rod Rentals</string>
+      </void>
+      <void property="vehicles">
+       <void method="add">
+        <object class="Premium" id="Premium1">
+         <void property="ID">
+          <string>AuR8-1058</string>
+         </void>
+         <void property="basePrice">
+          <int>23</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Audi</string>
+         </void>
+         <void property="model">
+          <string>R8</string>
+         </void>
+         <void property="pack">
+          <object class="java.lang.Enum" id="PremiumPackage0" method="valueOf">
+           <class>PremiumPackage</class>
+           <string>LUXURY</string>
+          </object>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Premium" id="Premium2">
+         <void property="ID">
+          <string>ChCa-1054</string>
+         </void>
+         <void property="basePrice">
+          <int>22</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Chevrolet</string>
+         </void>
+         <void property="model">
+          <string>Camaro</string>
+         </void>
+         <void property="pack">
+          <object class="java.lang.Enum" id="PremiumPackage1" method="valueOf">
+           <class>PremiumPackage</class>
+           <string>SPORT</string>
+          </object>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Premium" id="Premium3">
+         <void property="ID">
+          <string>ChCa-1055</string>
+         </void>
+         <void property="basePrice">
+          <int>22</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Chevrolet</string>
+         </void>
+         <void property="model">
+          <string>Camaro</string>
+         </void>
+         <void property="pack">
+          <object idref="PremiumPackage0"/>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Premium" id="Premium4">
+         <void property="ID">
+          <string>ChCa-1056</string>
+         </void>
+         <void property="basePrice">
+          <int>22</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Chevrolet</string>
+         </void>
+         <void property="model">
+          <string>Camaro</string>
+         </void>
+         <void property="pack">
+          <object idref="PremiumPackage1"/>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Premium" id="Premium5">
+         <void property="ID">
+          <string>ChCo-1057</string>
+         </void>
+         <void property="basePrice">
+          <int>19</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Chevrolet</string>
+         </void>
+         <void property="model">
+          <string>Corvette</string>
+         </void>
+         <void property="pack">
+          <object idref="PremiumPackage1"/>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Premium" id="Premium6">
+         <void property="ID">
+          <string>FoCo-1048</string>
+         </void>
+         <void property="basePrice">
+          <int>18</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Ford</string>
+         </void>
+         <void property="model">
+          <string>Cortina</string>
+         </void>
+         <void property="pack">
+          <object idref="PremiumPackage1"/>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Premium" id="Premium7">
+         <void property="ID">
+          <string>FoMo-1049</string>
+         </void>
+         <void property="basePrice">
+          <int>18</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Ford</string>
+         </void>
+         <void property="model">
+          <string>Mondeo</string>
+         </void>
+         <void property="pack">
+          <object class="java.lang.Enum" method="valueOf">
+           <class>PremiumPackage</class>
+           <string>BUSINESS</string>
+          </object>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Premium" id="Premium8">
+         <void property="ID">
+          <string>FoMu-1045</string>
+         </void>
+         <void property="basePrice">
+          <int>25</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Ford</string>
+         </void>
+         <void property="model">
+          <string>Mustang</string>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object idref="Premium0"/>
+       </void>
+       <void method="add">
+        <object class="Premium" id="Premium9">
+         <void property="ID">
+          <string>FoMu-1047</string>
+         </void>
+         <void property="basePrice">
+          <int>25</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Ford</string>
+         </void>
+         <void property="model">
+          <string>Mustang</string>
+         </void>
+         <void property="pack">
+          <object idref="PremiumPackage1"/>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Standard" id="Standard0">
+         <void property="ID">
+          <string>HoCi-1066</string>
+         </void>
+         <void property="basePrice">
+          <int>14</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Honda</string>
+         </void>
+         <void property="model">
+          <string>Civic</string>
+         </void>
+         <void property="optionList">
+          <void method="add">
+           <object class="java.lang.Enum" id="Option0" method="valueOf">
+            <class>Option</class>
+            <string>ROADSIDE</string>
+           </object>
+          </void>
+          <void method="add">
+           <object class="java.lang.Enum" id="Option1" method="valueOf">
+            <class>Option</class>
+            <string>BLUETOOTH</string>
+           </object>
+          </void>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Standard" id="Standard1">
+         <void property="ID">
+          <string>HoCi-1067</string>
+         </void>
+         <void property="basePrice">
+          <int>15</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Honda</string>
+         </void>
+         <void property="model">
+          <string>Civic</string>
+         </void>
+         <void property="optionList">
+          <void method="add">
+           <object class="java.lang.Enum" id="Option2" method="valueOf">
+            <class>Option</class>
+            <string>KEYLESS</string>
+           </object>
+          </void>
+          <void method="add">
+           <object idref="Option0"/>
+          </void>
+          <void method="add">
+           <object idref="Option1"/>
+          </void>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Premium" id="Premium10">
+         <void property="ID">
+          <string>LoEl-1051</string>
+         </void>
+         <void property="basePrice">
+          <int>23</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Lotus</string>
+         </void>
+         <void property="model">
+          <string>Elan</string>
+         </void>
+         <void property="pack">
+          <object idref="PremiumPackage1"/>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Premium" id="Premium11">
+         <void property="ID">
+          <string>LoEu-1050</string>
+         </void>
+         <void property="basePrice">
+          <int>22</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Lotus</string>
+         </void>
+         <void property="model">
+          <string>Europa</string>
+         </void>
+         <void property="pack">
+          <object idref="PremiumPackage1"/>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Premium" id="Premium12">
+         <void property="ID">
+          <string>LoSe-1052</string>
+         </void>
+         <void property="basePrice">
+          <int>22</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Lotus</string>
+         </void>
+         <void property="model">
+          <string>Seven</string>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Premium" id="Premium13">
+         <void property="ID">
+          <string>MaQu-1053</string>
+         </void>
+         <void property="basePrice">
+          <int>26</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Maserati</string>
+         </void>
+         <void property="model">
+          <string>Quatra</string>
+         </void>
+         <void property="pack">
+          <object idref="PremiumPackage0"/>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Standard" id="Standard2">
+         <void property="ID">
+          <string>NiMi-1061</string>
+         </void>
+         <void property="basePrice">
+          <int>14</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Nissan</string>
+         </void>
+         <void property="model">
+          <string>Micra</string>
+         </void>
+         <void property="optionList">
+          <void method="add">
+           <object idref="Option2"/>
+          </void>
+          <void method="add">
+           <object idref="Option0"/>
+          </void>
+          <void method="add">
+           <object class="java.lang.Enum" id="Option3" method="valueOf">
+            <class>Option</class>
+            <string>SATNAV</string>
+           </object>
+          </void>
+          <void method="add">
+           <object idref="Option1"/>
+          </void>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Standard" id="Standard3">
+         <void property="ID">
+          <string>NiMi-1065</string>
+         </void>
+         <void property="basePrice">
+          <int>15</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Nissan</string>
+         </void>
+         <void property="model">
+          <string>Micra</string>
+         </void>
+         <void property="optionList">
+          <void method="add">
+           <object idref="Option2"/>
+          </void>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Standard" id="Standard4">
+         <void property="ID">
+          <string>ReMe-1059</string>
+         </void>
+         <void property="basePrice">
+          <int>17</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Renault</string>
+         </void>
+         <void property="model">
+          <string>Megane</string>
+         </void>
+         <void property="optionList">
+          <void method="add">
+           <object idref="Option3"/>
+          </void>
+          <void method="add">
+           <object idref="Option0"/>
+          </void>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Standard" id="Standard5">
+         <void property="ID">
+          <string>ReR5-1060</string>
+         </void>
+         <void property="basePrice">
+          <int>17</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Renault</string>
+         </void>
+         <void property="model">
+          <string>R5</string>
+         </void>
+         <void property="optionList">
+          <void method="add">
+           <object idref="Option1"/>
+          </void>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Standard" id="Standard6">
+         <void property="ID">
+          <string>ToYa-1062</string>
+         </void>
+         <void property="basePrice">
+          <int>15</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Toyota</string>
+         </void>
+         <void property="model">
+          <string>Yaris</string>
+         </void>
+         <void property="optionList">
+          <void method="add">
+           <object class="java.lang.Enum" id="Option4" method="valueOf">
+            <class>Option</class>
+            <string>NONE</string>
+           </object>
+          </void>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Standard" id="Standard7">
+         <void property="ID">
+          <string>ToYa-1063</string>
+         </void>
+         <void property="basePrice">
+          <int>16</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Toyota</string>
+         </void>
+         <void property="model">
+          <string>Yaris</string>
+         </void>
+         <void property="optionList">
+          <void method="add">
+           <object idref="Option4"/>
+          </void>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Standard" id="Standard8">
+         <void property="ID">
+          <string>ToYa-1064</string>
+         </void>
+         <void property="basePrice">
+          <int>17</int>
+         </void>
+         <void property="inventory">
+          <object idref="Inventory0"/>
+         </void>
+         <void property="make">
+          <string>Toyota</string>
+         </void>
+         <void property="model">
+          <string>Yaris</string>
+         </void>
+         <void property="optionList">
+          <void method="add">
+           <object idref="Option2"/>
+          </void>
+          <void method="add">
+           <object idref="Option3"/>
+          </void>
+         </void>
+        </object>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void property="make">
+     <string>Ford</string>
+    </void>
+    <void property="model">
+     <string>Mustang</string>
+    </void>
+    <void property="pack">
+     <object idref="PremiumPackage1"/>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object idref="Premium9"/>
+  </void>
+  <void method="add">
+   <object idref="Premium10"/>
+  </void>
+  <void method="add">
+   <object idref="Premium13"/>
+  </void>
+  <void method="add">
+   <object idref="Premium11"/>
+  </void>
+  <void method="add">
+   <object idref="Premium2"/>
+  </void>
+  <void method="add">
+   <object idref="Premium4"/>
+  </void>
+  <void method="add">
+   <object idref="Premium1"/>
+  </void>
+  <void method="add">
+   <object idref="Premium3"/>
+  </void>
+  <void method="add">
+   <object idref="Premium5"/>
+  </void>
+  <void method="add">
+   <object idref="Premium6"/>
+  </void>
+  <void method="add">
+   <object idref="Premium7"/>
+  </void>
+  <void method="add">
+   <object idref="Premium8"/>
+  </void>
+  <void method="add">
+   <object idref="Premium12"/>
+  </void>
+ </object>
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object idref="Standard2"/>
+  </void>
+  <void method="add">
+   <object idref="Standard1"/>
+  </void>
+  <void method="add">
+   <object idref="Standard4"/>
+  </void>
+  <void method="add">
+   <object idref="Standard0"/>
+  </void>
+  <void method="add">
+   <object idref="Standard8"/>
+  </void>
+  <void method="add">
+   <object idref="Standard5"/>
+  </void>
+  <void method="add">
+   <object idref="Standard3"/>
+  </void>
+  <void method="add">
+   <object idref="Standard7"/>
+  </void>
+  <void method="add">
+   <object idref="Standard6"/>
+  </void>
+ </object>
+</java>
