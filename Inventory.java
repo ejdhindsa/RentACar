@@ -1,3 +1,11 @@
+/******************************************************
+ * ACS-1904 : Assignement 3 - Rent A Car
+ * Name : Ekamjot Singh
+ * Student ID: 3167888
+ * 
+ * Github Link: https://github.com/ejdhindsa/RentACar
+ *****************************************************/
+
 // import statements
 import java.util.ArrayList;
 import java.util.Collections;
@@ -73,10 +81,12 @@ public class Inventory
         // creating a StringBuilder to hold the info of vehicles list
         StringBuilder st = new StringBuilder();
         
+        st.append(this.name + " Inventory:\n\n");
+        
         // sorting the arraylist using collections.sort
         for(Vehicle v: vehicleList)
         {
-            st.append(v + ": ");
+            st.append(v.getMake() + " " + v.getModel() + ": ");
             st.append(v.getID() + " $");
             st.append(v.calculatePrice() + "\n");
             

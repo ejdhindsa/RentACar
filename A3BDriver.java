@@ -1,3 +1,11 @@
+/******************************************************
+ * ACS-1904 : Assignement 3 - Rent A Car
+ * Name : Ekamjot Singh
+ * Student ID: 3167888
+ * 
+ * Github Link: https://github.com/ejdhindsa/RentACar
+ *****************************************************/
+
 // import statements
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
@@ -6,13 +14,24 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.io.FileNotFoundException;
+import javax.swing.JOptionPane;
 
 public class A3BDriver
 {
     public static void main(String [] args) throws IOException
     {
         // creating a decoder that will read the files
-        XMLDecoder decoder = new XMLDecoder(new FileInputStream("As3-vehicles.xml"));
+        XMLDecoder decoder;
+        try
+        {
+            decoder = new XMLDecoder(new FileInputStream("As3-vehicles.xml"));
+        } // end of try
+        catch (FileNotFoundException e)
+        {
+            decoder = null;
+            JOptionPane.showMessageDialog(null, "File not Found.");
+        } // end of catch
         
         // creating arraylists that will hold premium and standard vehicles
         ArrayList<Vehicle> premium = new ArrayList<>();
@@ -20,10 +39,16 @@ public class A3BDriver
         
         // creating an arraylist that will read value from the XML file
         // we cast the object into an arraylist as it is a java object
-        ArrayList<Vehicle> vehicles = (ArrayList) decoder.readObject();
+        ArrayList<Vehicle> vehicles = new ArrayList<>();
         
-        decoder.close();        // closing the decoder
+        if (decoder != null)
+        {
+           vehicles = (ArrayList) decoder.readObject();
+           decoder.close();        // closing the decoder 
+            
+        } // end of if
         
+
         // using a for loop to got through the file and adding vehicles to either
         // of the arrays based on what kind of vehicles they are
         for (Vehicle v : vehicles)

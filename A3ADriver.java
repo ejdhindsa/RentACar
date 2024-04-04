@@ -1,3 +1,11 @@
+/******************************************************
+ * ACS-1904 : Assignement 3 - Rent A Car
+ * Name : Ekamjot Singh
+ * Student ID: 3167888
+ * 
+ * Github Link: https://github.com/ejdhindsa/RentACar
+ *****************************************************/
+
 // import statements
 import java.beans.XMLEncoder;
 import java.io.FileOutputStream;
@@ -101,7 +109,7 @@ public class A3ADriver
         // write to XML files
         System.out.println();
         System.out.println("-------------------------------------------");
-        System.out.println("XML files are bein written.");
+        System.out.println("XML files are being written.");
         
         // creating an XML Encoder in order to write the XML files
         

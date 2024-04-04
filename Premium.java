@@ -1,3 +1,11 @@
+/******************************************************
+ * ACS-1904 : Assignement 3 - Rent A Car
+ * Name : Ekamjot Singh
+ * Student ID: 3167888
+ * 
+ * Github Link: https://github.com/ejdhindsa/RentACar
+ *****************************************************/
+
 public class Premium extends Vehicle
 {
     // FIELDS

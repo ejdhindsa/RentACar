@@ -1,3 +1,11 @@
+/******************************************************
+ * ACS-1904 : Assignement 3 - Rent A Car
+ * Name : Ekamjot Singh
+ * Student ID: 3167888
+ * 
+ * Github Link: https://github.com/ejdhindsa/RentACar
+ *****************************************************/
+
 // import statements
 import java.util.ArrayList;
 
@@ -5,21 +13,23 @@ public class WeeklySpecial
 {
     // FIELDS
     private String date;
-    private static int lastNumber = 1045;
+    private static int lastNumber = 1044;
     private ArrayList<Vehicle> specialsList;
     private int id;
     
     // CONSTRUCTORS
     public WeeklySpecial()
     {
-        date = "unknown";
+       date = "unknown";
        id = setID();
+       specialsList = new ArrayList<>();
     } // end of no-arg constructor
     
     public WeeklySpecial(String date)
     {
         this.date = date;
         id = setID();
+        specialsList = new ArrayList<>();
     } // end of full-arg constructor
     
     /*************************************
@@ -77,17 +87,26 @@ public class WeeklySpecial
     public void addSpecial(Vehicle vehicle)
     {
         specialsList.add(vehicle);
+        
+        // and when this special is added, it's special code is set to be
+        // the last number, hence giving it a special code
+        // the lastNumber++ also increments the number by one after assigning
+        vehicle.setSpecialCode(lastNumber++);
+        
+        // setting this id to be the lastNumber++
+        id = lastNumber;
+        
     } // end of addSpecial()
     
     public void displaySpecialsList()
     {
         System.out.println("Date: " + this.date);
-        System.out.println("Special ID \t \t Vehicle");
+        System.out.println("Special ID \tVehicle");
         
         // starting a for each loop to print all the vehicles
         for(Vehicle v : specialsList)
         {
-            System.out.println(this.id + "\t \t" + v.getMake() + " " + v.getModel());
+            System.out.println(v.getSpecialCode() + "\t \t" + v.getMake() + " " + v.getModel());
         } // end of enhanced-for
         
     } // end of displaySpecialsList()
